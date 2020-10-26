@@ -1,0 +1,47 @@
+/*ifstream infile,infiles;
+    infiles.open("/home/lixiaodong/project/trajectory_compare/groundtruth.txt");
+    infile.open("/home/lixiaodong/project/trajectory_compare/estimated.txt");
+    if(!infile) cout<<"error"<<endl;
+    double data,data1,e_i=0;
+    double a[612][8],b[612][8];
+    double *p=&a[0][0],*q=&b[0][0];
+    //pose1 读取estimated.txt
+    while(infile>>data)             //遇到空白符结束
+    {
+        *p=data;
+         p++;
+    }
+    infile.close();
+    for(int i=0;i<612;i++)   //分别对每一行数据生成一个变换矩阵，然后存入动态数组pose1中
+    {
+        Eigen::Quaterniond q1 = Eigen::Quaterniond(a[i][7],a[i][4],a[i][5],a[i][6]);
+        Eigen::Vector3d t1;
+        t1<<a[i][1],a[i][2],a[i][3];
+        Sophus::SE3 SE3_qt1(q1,t1);
+        pose1.push_back(SE3_qt1);
+    }
+    //pose2读取groundtruth.txt
+    while(infiles>>data1)             //遇到空白符结束
+    {
+        *q=data1;
+        q++;
+    }
+    infiles.close();
+    for(int i=0;i<612;i++)   //分别对每一行数据生成一个变换矩阵，然后存入动态数组pose2中
+    {
+        Eigen::Quaterniond q2 = Eigen::Quaterniond(b[i][7],b[i][4],b[i][5],b[i][6]);
+        Eigen::Vector3d t2;
+        t2<<b[i][1],b[i][2],b[i][3];
+        Sophus::SE3 SE3_qt2(q2,t2);
+        pose2.push_back(SE3_qt2);
+    }
+    cout<<"存入数组完成"<<endl;   //先将文件中的数据存入到一个二维数组中
+
+    for(int i=0;i<612;i++)
+    {
+        Sophus::SE3 SE3_qt3=pose2[i].inverse()*pose1[i];
+        Eigen::Matrix<double,6,1>v_61=SE3_qt3.log();
+        e_i=v_61.norm()*v_61.norm()+e_i;
+    }
+    double RMSE=sqrt(e_i/612);
+    cout<<"RMSE= "<<RMSE<<endl;*/

@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/lxd/my_code/project/direct_method/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cef8b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cef8b.dir/build.make CMakeFiles/cmTC_cef8b.dir/build
+make[1]: Entering directory '/home/lxd/my_code/project/direct_method/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cef8b.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_cef8b.dir/CheckSymbolExists.c.o   -c /home/lxd/my_code/project/direct_method/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cef8b
+/home/lxd/software/install_package/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cef8b.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     -rdynamic CMakeFiles/cmTC_cef8b.dir/CheckSymbolExists.c.o  -o cmTC_cef8b 
+CMakeFiles/cmTC_cef8b.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cef8b.dir/build.make:86: recipe for target 'cmTC_cef8b' failed
+make[1]: *** [cmTC_cef8b] Error 1
+make[1]: Leaving directory '/home/lxd/my_code/project/direct_method/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_cef8b/fast' failed
+make: *** [cmTC_cef8b/fast] Error 2
+
+File /home/lxd/my_code/project/direct_method/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lxd/my_code/project/direct_method/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b55ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b55ca.dir/build.make CMakeFiles/cmTC_b55ca.dir/build
+make[1]: Entering directory '/home/lxd/my_code/project/direct_method/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b55ca.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b55ca.dir/CheckFunctionExists.c.o   -c /home/lxd/software/install_package/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b55ca
+/home/lxd/software/install_package/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b55ca.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_b55ca.dir/CheckFunctionExists.c.o  -o cmTC_b55ca -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b55ca.dir/build.make:86: recipe for target 'cmTC_b55ca' failed
+make[1]: *** [cmTC_b55ca] Error 1
+make[1]: Leaving directory '/home/lxd/my_code/project/direct_method/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_b55ca/fast' failed
+make: *** [cmTC_b55ca/fast] Error 2
+
+

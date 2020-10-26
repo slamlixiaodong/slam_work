@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -O3 -g   CMakeFiles/E2Rt.dir/E2Rt.cpp.o  -o E2Rt -rdynamic /home/lxd/software/install_package/Sophus/build/libSophus.so -Wl,-rpath,/home/lxd/software/install_package/Sophus/build 

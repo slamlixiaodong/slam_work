@@ -1,0 +1,4 @@
+/home/lxd/software/install_package/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/lxd/my_code/project/orb
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lxd/my_code/project/orb/cmake-build-debug

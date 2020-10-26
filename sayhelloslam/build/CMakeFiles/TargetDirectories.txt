@@ -1,0 +1,8 @@
+/home/lixiaodong/sayhelloslam/build/CMakeFiles/install.dir
+/home/lixiaodong/sayhelloslam/build/CMakeFiles/list_install_components.dir
+/home/lixiaodong/sayhelloslam/build/CMakeFiles/rebuild_cache.dir
+/home/lixiaodong/sayhelloslam/build/CMakeFiles/edit_cache.dir
+/home/lixiaodong/sayhelloslam/build/CMakeFiles/hello.dir
+/home/lixiaodong/sayhelloslam/build/CMakeFiles/sayhello.dir
+/home/lixiaodong/sayhelloslam/build/CMakeFiles/install/strip.dir
+/home/lixiaodong/sayhelloslam/build/CMakeFiles/install/local.dir

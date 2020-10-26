@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/sayhello.dir/src/useHello.cpp.o  -o ../src/sayhello -Wl,-rpath,/home/lixiaodong/project/sayhelloslam/cmake-build-debug libhello.so 

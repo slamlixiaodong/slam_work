@@ -1,0 +1,7 @@
+/home/lixiaodong/clion-2018.1.5/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/lixiaodong/project/g2o
+find g2o libraries in: /usr/local/include
+find g2o lib in g2o_clig2o_ext_freeglut_minimalg2o_simulatorg2o_solver_slam2d_linearg2o_types_icpg2o_types_slam2dg2o_types_sbag2o_types_slam3dg2o_coreg2o_interfaceg2o_solver_csparseg2o_solver_structure_onlyg2o_csparse_extensiong2o_opengl_helperg2o_solver_denseg2o_stuffg2o_types_sclam2dg2o_parserg2o_solver_pcgg2o_types_datag2o_types_sim3cxsparse
+find cholmod in /usr/include/suitesparse
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lixiaodong/project/g2o/cmake-build-debug

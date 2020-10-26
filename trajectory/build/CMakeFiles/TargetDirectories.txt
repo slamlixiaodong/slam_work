@@ -1,0 +1,3 @@
+/home/lixiaodong/project/trajectory/build/CMakeFiles/rebuild_cache.dir
+/home/lixiaodong/project/trajectory/build/CMakeFiles/edit_cache.dir
+/home/lixiaodong/project/trajectory/build/CMakeFiles/trajectory.dir
